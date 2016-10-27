@@ -56,7 +56,7 @@ public class CinradProducer implements CommandLineRunner {
 	}
 
 	private boolean checkConfigFileValid(Properties props) {
-        logger.info(props.size()+"");
+        //logger.info(props.size()+"");
 		for (String key : Config.CONFIG_SET) {
 			if (!props.containsKey(key)) {
 				logger.error("配置文件**cinrad.properties有误,请检查:{}", key);
