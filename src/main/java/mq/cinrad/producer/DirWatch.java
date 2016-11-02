@@ -131,6 +131,10 @@ public class DirWatch implements Runnable {
 					continue;
 				}
 
+				if (null != file) {
+					file = null;
+				}
+
 				// if directory is created, and watching recursively, then
 				// register it and its sub-directories
 				if (kind == ENTRY_CREATE) {
@@ -142,6 +146,7 @@ public class DirWatch implements Runnable {
 						logger.error(x.getMessage());
 					}
 				}
+
 			}
 
 			boolean valid = key.reset();

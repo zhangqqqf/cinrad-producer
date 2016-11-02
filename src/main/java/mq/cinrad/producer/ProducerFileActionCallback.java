@@ -54,6 +54,7 @@ public class ProducerFileActionCallback implements FileActionCallback {
 			String fileUri = file.toURI().toString();
 			logger.info("delete file: {}", fileUri);
 		}
+
 	}
 
 	@Override
@@ -62,6 +63,7 @@ public class ProducerFileActionCallback implements FileActionCallback {
 			String fileUri = file.toURI().toString();
 			logger.info("modify file: {}", fileUri);
 		}
+
 	}
 
 	@Override
@@ -93,6 +95,7 @@ public class ProducerFileActionCallback implements FileActionCallback {
 				template.flush();
 
 			}
+
 		}
 
 	}
