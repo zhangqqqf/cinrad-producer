@@ -1,4 +1,4 @@
-package mq.cinrad.producer;
+package mq.cinrad.kafka.producer;
 
 import java.io.File;
 

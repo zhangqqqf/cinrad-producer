@@ -1,4 +1,4 @@
-package mq.cinrad.producer;
+package mq.cinrad.kafka.producer;
 
 public enum FileAction {
 	DELETE("ENTRY_DELETE"), CREATE("ENTRY_CREATE"), MODIFY("ENTRY_MODIFY");
